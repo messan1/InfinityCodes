@@ -1,14 +1,17 @@
-input{
-    width: 291px;
-    height: 52px;
-    border: 1px solid #E1E1E1;
-  
-
+input {
+  width: 291px;
+  height: 52px;
+  border: 1px solid #e1e1e1;
 }
-input::placeholder{
-    color: #B5B5B5;
-    font-size: 18px;
-    font-weight: 400;
-    text-align: center
-
+input::placeholder {
+  color: #b5b5b5;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
 }
+@media (max-width: 921px) {
+  input {
+    width: 100%;
+  }
+}
+

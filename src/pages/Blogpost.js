@@ -15,6 +15,9 @@ const SiteTitle = styled.h1`
 const Content = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  @media(max-width:1000px){
+    grid-template-columns: 0.33fr 2fr 0.33fr;
+  }
 `
 
 const ArticleContent = styled.div`
