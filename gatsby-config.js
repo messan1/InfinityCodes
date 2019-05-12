@@ -24,6 +24,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint: "https://refacc.us7.list-manage.com/subscribe/post?u=1c9b4fc59e9f70f764da90623&amp;id=8b9f1269c9", 
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,

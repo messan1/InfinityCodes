@@ -1,75 +1,158 @@
-import React from 'react';
-import styled from 'styled-components'
-import './css/BlogPost.css'
+import React, { Component } from 'react';
+import styled from "styled-components"
+import "./css/BlogPost.css"
+import addToMailchimp from "gatsby-plugin-mailchimp"
 
 const Layer = styled.div`
-    width:100%;
-    background-color:#f8f9fa;
-    height:300px;
-    margin-top:25px;
-    margin-bottom:25px;
-    padding:100px;
-    display:flex;
-    flex-wrap:wrap
-
-    position:relative
-    @media(max-width:1186px){
-        padding:40px;
-    }
-    @media(max-width:1002px){
-        padding:30px;
-    }
-
+  width: 100%;
+  background-color: #f8f9fa;
+  height: 300px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 100px;
+  display: flex;
+  flex-wrap:wrap position:relative @media(max-width:1186px) {
+    padding: 40px;
+  }
+  @media (max-width: 1002px) {
+    padding: 30px;
+  }
 `
 const Title = styled.p`
-    font-size:48px;
-    font-weigth:700;
-    text-align:center;
-    @media(max-width:531px){
-        margin-top:45px;
-        font-size:30px;
-        width:100%
-    }
-    @media(max-width:1002px){
-        font-size:30px;
-        width:100%
-    }
-    
+  font-size: 48px;
+  font-weigth: 700;
+  text-align: center;
+  @media (max-width: 531px) {
+    margin-top: 45px;
+    font-size: 30px;
+    width: 100%;
+  }
+  @media (max-width: 1002px) {
+    font-size: 30px;
+    width: 100%;
+  }
 `
-const InputGroup = styled.div`
-    display:flex;
-    justify-content:center;
-    margin-top:35px;
-    flex-wrap:wrap;
-    width:100%
-    @media(max-width:800px){
-        position:absolute;
-        left:0;
-        rigth:0;
-        bottom:0;
-    }
+const InputGroup = styled.form`
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  flex-wrap: wrap;
+  width:100% @media(max-width:800px) {
+    position: absolute;
+    left: 0;
+    rigth: 0;
+    bottom: 0;
+  }
 `
 const Button = styled.button`
-    width:94px;
-    height:52px;
-    color:white;
-    border-style:none;
-    background-color:black;
-    @media(max-width:1518px){
-        display:block
-    }
+  width: 94px;
+  height: 52px;
+  color: white;
+  border-style: none;
+  background-color: black;
+  @media (max-width: 1518px) {
+    display: block;
+  }
 `
 
+class NewsComp extends Component {
+    constructor() {
+        super()
+        this.state = {
+            email: ``,
+        }
+    }
 
-const NewsComp = ()=>(
-    <Layer>
+    // Update state each time user edits their email address
+    _handleEmailChange = e => {
+        this.setState({ email: e.target.value })
+    }
+
+    // Post to MC server & handle its response
+    _postEmailToMailchimp = (email, attributes) => {
+        addToMailchimp(email, attributes)
+            .then(result => {
+                // Mailchimp always returns a 200 response
+                // So we check the result for MC errors & failures
+                if (result.result !== `success`) {
+                    this.setState({
+                        status: `error`,
+                        msg: result.msg,
+                    })
+                } else {
+                    // Email address succesfully subcribed to Mailchimp
+                    this.setState({
+                        status: `success`,
+                        msg: result.msg,
+                    })
+                }
+            })
+            .catch(err => {
+                // Network failures, timeouts, etc
+                this.setState({
+                    status: `error`,
+                    msg: err,
+                })
+            })
+    }
+
+    _handleFormSubmit = e => {
+        e.preventDefault()
+        e.stopPropagation()
+
+        if (!this.state.email) {
+            this.setState({
+                status: `error`,
+                msg: "Please enter valid email!",
+            })
+        }
+        else {
+
+            this.setState(
+                {
+                    status: `sending`,
+                    msg: null,
+                }
+
+            )
+            // setState callback (subscribe email to MC)
+            this._postEmailToMailchimp(this.state.email, {
+                pathname: document.location.pathname,
+            })
+        }
+    }
+
+  render() {
+    return (
+      <Layer>
         <Title>Rester Infomé</Title>
-        <InputGroup>
-            <input type="text" name="name" placeholder="Entrer Votre Nom" className="nameInput" />
-            <input type="text" name="Number" placeholder="Entrer Votre Numero" className="nameInput" />
-            <Button>Envoyer</Button>
-        </InputGroup>
-    </Layer>
-)
+        {this.state.status===`success` ? (
+            <div>Votre Adresse Email a été Envoyé</div>
+        ) : (
+            <InputGroup
+            id="email-capture"
+            method="post"
+            noValidate
+            >
+              <input
+                type="text"
+                name="Number"
+                placeholder="Entrer Votre Numero"
+                className="nameInput"
+                onChange={this._handleEmailChange}
+                required
+              />
+              <Button     
+                className="icon-mail"
+                type="submit"
+                onClick={this._handleFormSubmit}>Envoyer</Button>
+                {this.state.msg}
+            </InputGroup>
+           
+        )}
+      </Layer>
+    )
+  }
+}
 
 export default NewsComp
