@@ -145,7 +145,7 @@ class NewsComp extends Component {
               <input
                 type="text"
                 name="Number"
-                placeholder="Entrer Votre Numero"
+                placeholder="Entrer Votre Email"
                 className="nameInput"
                 onChange={this._handleEmailChange}
                 required
