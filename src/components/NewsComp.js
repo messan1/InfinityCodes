@@ -11,7 +11,10 @@ const Layer = styled.div`
   margin-bottom: 25px;
   padding: 100px;
   display: flex;
-  flex-wrap:wrap position:relative @media(max-width:1186px) {
+  flex-wrap:wrap;
+  position:relative;
+  justify-content:center;
+   @media(max-width:1186px) {
     padding: 40px;
   }
   @media (max-width: 1002px) {
@@ -91,7 +94,7 @@ class NewsComp extends Component {
                 // Network failures, timeouts, etc
                 this.setState({
                     status: `error`,
-                    msg: err,
+                    msg: "Votre adresse existe déjà!",
                 })
             })
     }
@@ -103,7 +106,7 @@ class NewsComp extends Component {
         if (!this.state.email) {
             this.setState({
                 status: `error`,
-                msg: "Please enter valid email!",
+                msg: "Entrez une adresse valide ou votre adresse existe déjà!",
             })
         }
         else {
@@ -125,9 +128,14 @@ class NewsComp extends Component {
   render() {
     return (
       <Layer>
-        <Title>Rester Infomé</Title>
+        {this.state.status ===`success` ? (
+          <div></div>
+        ) : (
+          <Title>La communauté</Title>
+        )}
         {this.state.status===`success` ? (
-            <div>Votre Adresse Email a été Envoyé</div>
+            
+            <h1>Votre Adresse Email a été Envoyé</h1>
         ) : (
             <InputGroup
             id="email-capture"
