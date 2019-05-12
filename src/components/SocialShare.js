@@ -26,7 +26,7 @@ display:inline;
 
 
 const SocialShare = ()=>(
-    <Wrap>
+    <Wrap onClick={()=>window.open("https://web.facebook.com/infinityTips","_blank")}>
         <Text>Nous Suivre</Text>
         <Icons>
             <Icon icon={facebookSquare} size={35}/>

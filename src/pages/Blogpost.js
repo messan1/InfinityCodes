@@ -4,6 +4,48 @@ import BlogPostHeaderImages from "../components/imagesFluid/BlogPostHeaderImages
 import NewsComp from "../components/NewsComp"
 import SocialShare from "../components/SocialShare"
 import { StaticQuery, graphql } from "gatsby"
+import Img from '../images/header.jpg'
+
+const DataStore = ({ data }) => (
+  <StaticQuery
+    query={graphql`
+      query PostData {
+        markdownRemark {
+          frontmatter {
+            title
+            author
+            date
+          }
+          html
+        }
+      }
+    `}
+    
+    render={data => (
+      <Wrap>
+        <SiteTitle>INFINITYCODES</SiteTitle>
+        <Content>
+          <ArticleContent>
+            <Box>M</Box>
+            <ArticlesTitle>{data.markdownRemark.frontmatter.title}</ArticlesTitle>
+            <Author>
+              <By>by</By>
+              <Name>{data.markdownRemark.frontmatter.author}</Name>
+              <Dates>{data.markdownRemark.frontmatter.date}</Dates>
+            </Author>
+            <img src={Img}/>
+            <ArticleContentData dangerouslySetInnerHTML={{__html:data.markdownRemark.html}} />
+            <SocialShare />
+            <NewsComp />
+            <Copyr>INFINITYCODES</Copyr>
+          </ArticleContent>
+        </Content>
+      </Wrap>
+    )}
+  />
+)
+
+export default DataStore
 
 const Wrap = styled.div``
 const SiteTitle = styled.h1`
@@ -82,43 +124,3 @@ const ArticleContentData = styled.div`
   margin-top: 25px;
   text-justify: auto;
 `
-
-const DataStore = ({ data }) => (
-  <StaticQuery
-    query={graphql`
-      query PostData {
-        markdownRemark {
-          frontmatter {
-            title
-            author
-            date
-          }
-          html
-        }
-      }
-    `}
-    render={data => (
-      <Wrap>
-        <SiteTitle>INFINITYCODES</SiteTitle>
-        <Content>
-          <ArticleContent>
-            <Box>M</Box>
-            <ArticlesTitle>{data.markdownRemark.frontmatter.title}</ArticlesTitle>
-            <Author>
-              <By>by</By>
-              <Name>{data.markdownRemark.frontmatter.author}</Name>
-              <Dates>{data.markdownRemark.frontmatter.date}</Dates>
-            </Author>
-            <BlogPostHeaderImages />
-            <ArticleContentData dangerouslySetInnerHTML={{__html:data.markdownRemark.html}} />
-            <SocialShare />
-            <NewsComp />
-            <Copyr>INFINITYCODES</Copyr>
-          </ArticleContent>
-        </Content>
-      </Wrap>
-    )}
-  />
-)
-
-export default DataStore
