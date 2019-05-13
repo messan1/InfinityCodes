@@ -40,7 +40,8 @@ const InputGroup = styled.form`
   justify-content: center;
   margin-top: 35px;
   flex-wrap: wrap;
-  width:100% @media(max-width:800px) {
+  width:100%;
+   @media(max-width:800px) {
     position: absolute;
     left: 0;
     rigth: 0;
@@ -52,7 +53,7 @@ const Button = styled.button`
   height: 52px;
   color: white;
   border-style: none;
-  background-color: black;
+  background-color: #ff4133;
   @media (max-width: 1518px) {
     display: block;
   }

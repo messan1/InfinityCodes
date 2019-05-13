@@ -41,3 +41,7 @@ input::placeholder {
     height: 100px;
   }
 }
+a{
+  color: #ff4133;
+  text-decoration: none
+}

@@ -1,7 +1,7 @@
 ---
-path: "/pourquoi-apprendre-a-coder"
+path: "/5-raisons-pour-apprendre-a-coder"
 date: "11 Avril 2019"
-title: "Pourquoi Apprendre à coder"
+title: "5 raisons pour Apprendre à coder"
 author: "Messan Christian"
 lang: 'fr'
 ---
@@ -18,20 +18,20 @@ Plus que jamais, les entreprises du monde entier s’appuient sur le numérique 
 Tout d’abord, apprendre à coder vous aidera à vous engager.
 Presque toutes les industries imaginables réclament des développeurs et peu de personnes possèdent actuellement les compétences nécessaires pour progresser.
 En fait, des études montrent qu’au cours des cinq prochaines années, 800 000 travailleurs supplémentaires dotés de compétences numériques seront nécessaires pour répondre à la demande croissante des employeurs en Europe.
-Apprendre à lire, à écrire et à comprendre le code vous aidera instantanément à prendre une longueur d'avance.
+Apprendre à lire, à écrire et à comprendre le code vous aidera instantanément à prendre une longueur d'avance. vous serez capable aussi de lancer [votre entreprise pourquoi pas ](https://www.jeuneafrique.com/263795/societe/largent-africains-stephane-developpeur-geek-cameroun-456-euros-mois/)
 
 
 ##3. Vous pourriez avoir une bonne trajectoire salariale.
 
-Le salaire numérique est en augmentation. Avec un salaire de départ moyen pour un développeur débutant, entre 25 000 et 27 499 £, et passant à environ 40 000 en l'espace de deux ans à peine, le moment est venu de coder. Le développement de logiciels est bien plus qu’un simple salaire, mais il est bon de savoir que ce que vous ferez sera bien récompensé.
+Le salaire numérique est en augmentation.je vous detaillerai les chiffres dans un prochain article .le moment est venu de coder. Le développement de logiciels est bien plus qu’un simple salaire, mais il est bon de savoir que ce que vous ferez sera bien récompensé.
 Vous apprendrez quelque chose de nouveau chaque jour.
-L'un des meilleurs aspects de l'apprentissage du code est la capacité de continuer à apprendre. D'après mon expérience, il n'y a rien de plus satisfaisant que de choisir une nouvelle technologie de codage, de pouvoir l'apprendre efficacement et de l'appliquer à mon rôle de développeur Web. Une fois que vous avez maîtrisé une langue, passer à une autre devient plus facile et moins effrayant. Il s’agit de plonger dans le vif du sujet et de relever le défi.
+L'un des meilleurs aspects de l'apprentissage du code est la capacité de continuer à apprendre. D'après mon expérience, il n'y a rien de plus satisfaisant que de choisir une nouvelle technologie de codage, de pouvoir l'apprendre efficacement et de l'appliquer à mon rôle de développeur Web. Une fois que vous avez maîtrisé un langage de programmation, passer à un autre devient plus facile et moins effrayant. Il s’agit de plonger dans le vif du sujet et de relever le défi.
 
 ##4. Vous aurez plus qu'un travail de jour
 
 Avec le codage, plus vous êtes curieux et plus vous voulez apprendre, mieux c'est.
 Un bon développeur est intrinsèquement curieux et ne cesse jamais de chercher de nouvelles opportunités pour renforcer ses compétences, même en dehors des heures de travail. Et avec une journée de travail moins rigide, vous pourrez consacrer plus de temps à tous vos projets annexes.
-Ainsi, que vous souhaitiez ajouter des personnalisations à votre blog, créer un site Web à partir de rien ou même développer une toute nouvelle application mobile, vous aurez les compétences nécessaires pour poursuivre votre passion.
+Ainsi, que vous souhaitiez ajouter des personnalisations à votre blog, créer un site Web à partir de rien ou même développer une toute nouvelle application mobile, vous aurez les compétences nécessaires pour poursuivre votre passion. vous pouvez faire un petit saut [sur cette page](http://www.aboukam.net/2014/03/17/les-10-meilleurs-metiers-du-web-qui-seront-incontournables/)
 
 *     ![alt text](./img1.jpg "ilustraion carte visa")
 *     ![alt text](./img2.jpg "Ilustration travail")
