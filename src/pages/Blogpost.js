@@ -26,7 +26,7 @@ const DataStore = ({ data }) => (
       <Wrap>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Pourquoi Apprendre à coder</title>
+          <title>Pourquoi apprendre à coder ?</title>
         </Helmet>
         <SiteTitle>INFINITYCODES</SiteTitle>
         <Content>

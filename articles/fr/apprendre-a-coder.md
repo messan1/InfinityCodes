@@ -1,7 +1,7 @@
 ---
-path: "/5-raisons-pour-apprendre-a-coder"
+path: "/pourquoi-apprendre-a-coder"
 date: "11 Avril 2019"
-title: "5 raisons pour Apprendre à coder"
+title: "Pourquoi apprendre à coder ?"
 author: "Messan Christian"
 lang: 'fr'
 ---

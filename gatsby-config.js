@@ -35,7 +35,7 @@ module.exports = {
       options: {
         name: `infinity-codes`,
         short_name: `infinity`,
-        start_url: `/5-raisons-pour-apprendre-a-coder`,
+        start_url: `/pourquoi-apprendre-a-coder`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
