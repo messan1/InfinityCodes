@@ -4,18 +4,34 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import  styled  from 'styled-components';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <InfinityContent>
+      <Content>InfinityCode</Content>
+      <SubContent>Bientot disponible</SubContent>
+    </InfinityContent>
   </Layout>
 )
 
-export default IndexPage
+const InfinityContent = styled.div`
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  background-color:#292b2c;
+  height: 100%;
+`
+
+const Content = styled.h1``
+
+const SubContent = styled.h2``
+
+export default function NotFound() {
+  if (typeof window !== 'undefined') {
+    window.location = '/pourquoi-apprendre-a-coder';
+  }
+
+  return null;
+}

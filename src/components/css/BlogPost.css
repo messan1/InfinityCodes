@@ -15,3 +15,29 @@ input::placeholder {
   }
 }
 
+.articleContent {
+  margin-top: 25px;
+  text-align: justify;
+
+}
+
+.articleContent ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin:0;
+}
+.articleContent li {
+  margin-left: 25px;
+}
+@media(max-width:705px){
+  .articleContent ul {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    margin:0;
+  }
+  .articleContent img {
+    width: 300px;
+    height: 100px;
+  }
+}

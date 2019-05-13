@@ -4,7 +4,9 @@ import BlogPostHeaderImages from "../components/imagesFluid/BlogPostHeaderImages
 import NewsComp from "../components/NewsComp"
 import SocialShare from "../components/SocialShare"
 import { StaticQuery, graphql } from "gatsby"
-import Img from '../images/header.jpg'
+import Img from "../images/header.jpg"
+import { Helmet } from "react-helmet"
+import '../components/css/BlogPost.css'
 
 const DataStore = ({ data }) => (
   <StaticQuery
@@ -20,21 +22,28 @@ const DataStore = ({ data }) => (
         }
       }
     `}
-    
     render={data => (
       <Wrap>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Pourquoi Apprendre à coder</title>
+        </Helmet>
         <SiteTitle>INFINITYCODES</SiteTitle>
         <Content>
           <ArticleContent>
             <Box>M</Box>
-            <ArticlesTitle>{data.markdownRemark.frontmatter.title}</ArticlesTitle>
+            <ArticlesTitle>
+              {data.markdownRemark.frontmatter.title}
+            </ArticlesTitle>
             <Author>
               <By>by</By>
               <Name>{data.markdownRemark.frontmatter.author}</Name>
               <Dates>{data.markdownRemark.frontmatter.date}</Dates>
             </Author>
-            <img src={Img}/>
-            <ArticleContentData dangerouslySetInnerHTML={{__html:data.markdownRemark.html}} />
+            <img src={Img} />
+            <div className="articleContent" 
+              dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+            />
             <SocialShare />
             <NewsComp />
             <Copyr>INFINITYCODES</Copyr>
@@ -120,7 +129,4 @@ const Copyr = styled.div`
   margin-top: 80px;
   margin-bottom: 80px;
 `
-const ArticleContentData = styled.div`
-  margin-top: 25px;
-  text-justify: auto;
-`
+
