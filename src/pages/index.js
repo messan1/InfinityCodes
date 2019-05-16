@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Header from '../components/Header'
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -8,10 +9,7 @@ import  styled  from 'styled-components';
 
 const IndexPage = () => (
   <Layout>
-    <InfinityContent>
-      <Content>InfinityCode</Content>
-      <SubContent>Bientot disponible</SubContent>
-    </InfinityContent>
+    <Header />
   </Layout>
 )
 
@@ -28,10 +26,4 @@ const Content = styled.h1``
 
 const SubContent = styled.h2``
 
-export default function NotFound() {
-  if (typeof window !== 'undefined') {
-    window.location = '/pourquoi-apprendre-a-coder';
-  }
-
-  return null;
-}
+export default IndexPage;
