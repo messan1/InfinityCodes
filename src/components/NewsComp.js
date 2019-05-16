@@ -5,12 +5,13 @@ import addToMailchimp from "gatsby-plugin-mailchimp"
 
 const Layer = styled.div`
   width: 100%;
-  background-color: #f8f9fa;
+  background-color: white;
   height: 300px;
   margin-top: 25px;
   margin-bottom: 25px;
   padding: 100px;
   display: flex;
+  grid-column:2/3;
   flex-wrap:wrap;
   position:relative;
   justify-content:center;

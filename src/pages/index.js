@@ -1,29 +1,29 @@
 import React from "react"
 import { Link } from "gatsby"
-import Header from '../components/Header'
-
+import Header from "../components/Header"
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-import  styled  from 'styled-components';
+import Hero from "../components/Hero"
+import "../components/css/Styles.css"
+import ArticlesCard from "../components/ArticlesCard"
+import NewsComp from "../components/NewsComp"
 
 const IndexPage = () => (
   <Layout>
-    <Header />
+    <div className="AllContent">
+      <Header />
+      <Hero />
+      <article className="ArticleContent">
+        <ArticlesCard />
+        <ArticlesCard />
+        <ArticlesCard />
+        <ArticlesCard />
+        <ArticlesCard />
+        <ArticlesCard />
+      </article>
+      <NewsComp />
+      <footer>INFINITYCODES</footer>
+    </div>
   </Layout>
 )
 
-const InfinityContent = styled.div`
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction:column;
-  background-color:#292b2c;
-  height: 100%;
-`
-
-const Content = styled.h1``
-
-const SubContent = styled.h2``
-
-export default IndexPage;
+export default IndexPage

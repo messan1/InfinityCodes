@@ -1,0 +1,36 @@
+.HeaderGroup{
+    display: grid;
+     
+}
+.headerGroupDetails{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: space-between; 
+    margin: auto;
+
+}
+.headerGroupDetails li {
+    display: inline;
+    margin-right: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #919192;
+    cursor: pointer;
+    
+}
+.headerGroupDetails li:hover{
+    border-top: 3px solid #FF4141;
+    color: #FF4141;
+    padding-top: 15px;
+    transition: 0.8s cubic-bezier(0.075, 0.8, 0.2, 1)
+}
+
+.box1{
+    list-style: none;
+    margin: 0
+}
+
+.box2{
+    list-style: none;
+    
+}

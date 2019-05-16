@@ -1,0 +1,22 @@
+.AllContent{
+    display: grid;
+    grid-template-columns:1fr 4fr 1fr; 
+}
+header{
+    grid-column: 2/3;
+    text-align: center;
+}
+.ArticleContent{
+    margin-top: 50px;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px 50px;
+
+}
+footer{
+    grid-column: 2;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}

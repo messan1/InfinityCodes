@@ -1,28 +1,28 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import styled from "styled-components"
+import './css/header.css'
 
 const Header = ({ siteTitle }) => (
-  <Headers>
-    <Content>
-      <Items>
-        <Item>HOME</Item>
-        <Item>FORMATIONS</Item>
-        <Item>ARTICE</Item>
-        <Item>EVENEMENTS</Item>
-        <Item>PROJETS</Item>
-        <Item>CONTACT</Item>
-        <Item>...</Item>
-      </Items>
-      <Items>
-        <Item>LOGIN</Item>
-        <Item>REGISTER</Item>
-        <Item>ARTICE</Item>
-        <Item>FR</Item>
-      </Items>
-    </Content>
-  </Headers>
+  <header className="HeaderGroup">
+    <h1>InfinityCodes</h1>
+    <div className="headerGroupDetails">
+      <ul className="box1">
+        <li>HOME</li>
+        <li>FORMATION</li>
+        <li>ARTICLES</li>
+        <li>EVENEMENTS</li>
+        <li>PROJETS</li>
+        <li>CONTACTS</li>
+      </ul>
+      <ul className="box2">
+        <li>LOGIN</li>
+        <li>REGISTER</li>
+        <li>EN</li>
+        
+      </ul>
+    </div>
+  </header>
 )
 
 Header.propTypes = {
@@ -34,34 +34,3 @@ Header.defaultProps = {
 }
 
 export default Header
-
-const Headers = styled.div`
-  display: grid;
-  grid-template-columns: 1.5fr 4fr 1.5fr;
-`
-
-const Name = styled.h1`
-  font-size: 23px;
-  font-weigth: 600;
-  text-align: center;
-  text-color: color;
-`
-
-const Content = styled.div`
-  grid-column:2/3
-  display: grid;
-  grid-template-columns: auto auto;
-  place-content: center;
-  place-items: center;
-`
-
-const Block = styled.div``
-
-const Items = styled.ul`
-  list-style: none;
-`
-
-const Item = styled.li`
-  display: inline;
-  margin:10px;
-`

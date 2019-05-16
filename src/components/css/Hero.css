@@ -1,0 +1,39 @@
+
+.Hero{
+    grid-column: 2/3;
+    width: 100%;
+    background-color:#342F2F;
+    height: 500px; 
+    position: relative;
+    padding:30px 20px;
+}
+.IconCourse{
+    position: absolute;
+    color: white;
+    top: 0;
+}
+.IconCourse::after{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+.CourseGroup{
+    position: absolute;
+    color: white;
+    bottom: 20%;
+}
+.CourseTitle{
+    font-size: 40px;
+    line-height: 1.1em;
+    margin-bottom:25px 
+}
+.author{
+    display: inline;
+    color: #E1E1E1
+}
+.date{
+    display: inline;
+    margin-left: 20px;
+    color: #E1E1E1
+
+}

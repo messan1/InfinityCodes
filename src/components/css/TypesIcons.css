@@ -1,0 +1,22 @@
+.TypesIconsGroup{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.SmallIcon{
+    margin-bottom: 1px;
+    background-color: #2680EB;
+    text-align: center;
+    font-weight: bold;
+    height: auto
+}
+
+.Typeof{
+    font-weight: bold;
+    margin-left: 5px;
+}
+.Typeof::before{
+    content: "-";
+    color: #847E7E
+}

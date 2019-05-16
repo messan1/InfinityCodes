@@ -1,0 +1,17 @@
+.CardImg{
+    background-color: gray;
+    width:auto;
+    height:300px;
+}
+.CardAuthor{
+    display: inline;
+    margin-right: 5px;
+}
+.CardDate{
+    display: inline;
+    margin-left: 10px;
+}
+.CardInfo{
+    margin-top:10px;
+    margin-bottom: 20px; 
+}
