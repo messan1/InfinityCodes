@@ -3,7 +3,7 @@ import TypesIcons from "./TypesIcons"
 import "./css/Hero.css"
 import styled from 'styled-components'
 
-const Hero = () => (
+const Hero = props => (
   <HeroDiv>
     <div className="Dark">
       <TypesIcons
@@ -15,11 +15,10 @@ const Hero = () => (
       />
       <div className="CourseGroup">
         <div className="CourseTitle">
-          Vitae Nec Adipiscing Quis
-          <br /> Semper Quam Tellus Nascetur
+          {props.heroTitle}
         </div>
-        <div className="author">By Messan christian</div>
-        <div className="date">December 2019</div>
+        <div className="author">By {props.author}</div>
+        <div className="date">{props.date}</div>
       </div>
     </div>
   </HeroDiv>

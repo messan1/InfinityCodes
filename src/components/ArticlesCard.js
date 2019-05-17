@@ -3,7 +3,8 @@ import "./css/ArticlesCard.css"
 import TypesIcons from "./TypesIcons"
 import styled from "styled-components"
 
-const ArticlesCard = () => (
+
+const ArticlesCard = props => (
   <div className="CardContent">
     <TypesIcons
       heigth={30}
@@ -16,12 +17,12 @@ const ArticlesCard = () => (
       <div className="DarKCard" />
     </CardImg>
     <div className="SumGroup">
-      <h2>Sapien Lorem Llibero Augue Tincidunt</h2>
+      <h2>{props.title}</h2>
       <div className="CardInfo">
         <p className="CardAuthor">
-          By <strong>Messan Christian</strong>
+          By <strong>{props.author}</strong>
         </p>
-        <p className="CardDate">December 2019</p>
+        <p className="CardDate">{props.date}</p>
       </div>
       <p>
         Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor
