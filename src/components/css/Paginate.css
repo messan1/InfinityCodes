@@ -1,0 +1,22 @@
+.PaginateContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 45px;
+}
+button{
+    font-size: 25px;
+    color: #707070;
+    text-align: center;
+    background-color: white;
+    border-style: none;
+    cursor: pointer;
+}
+
+.IconButton{
+    background-color: #FF4141;
+    width: 35px;
+    height: 35px;
+    color: white;
+    margin: auto;
+    margin-bottom: 10px;
+}

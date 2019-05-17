@@ -1,0 +1,20 @@
+.CardContent1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-bottom: 35px;
+  margin: auto;
+}
+
+.SumGroup1 {
+  grid-column: 2;
+  margin-left: 35px;
+}
+
+
+@media(max-width:584px){
+    .CardContent1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 35px;
+      }
+}

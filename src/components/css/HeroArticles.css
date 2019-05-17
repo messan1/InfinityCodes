@@ -1,0 +1,64 @@
+.Hero1 {
+    grid-column: 2/3;
+    width: 100%;
+    background: url("../../images/ratl.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+
+  
+   
+  }
+  .Dark1 {
+    position: absolute;
+    background-color: black;
+    opacity: 0.35;
+    z-index: 5448844;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+
+  }
+  .IconCourse1 {
+    position: absolute;
+    color: white;
+    top: 0;
+  }
+  .IconCourse1::after {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+  }
+  .CourseGroup1 {
+    position: absolute;
+    color: white;
+    bottom: 10%;
+    grid-column: 2
+  }
+  .CourseTitle1 {
+    font-size: 75px;
+    width: 100%;
+    line-height: 1.1em;
+    margin-bottom: 25px;
+  }
+  .IconsGroup1{
+    grid-column: 2
+  }
+  .author1 {
+    display: inline;
+    color: #e1e1e1;
+  }
+  .date1 {
+    display: inline;
+    margin-left: 20px;
+    color: #e1e1e1;
+  }
+  
