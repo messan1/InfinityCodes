@@ -2,7 +2,8 @@ import React from "react"
 import "./css/ArticlesCard.css"
 import TypesIcons from "./TypesIcons"
 import styled from "styled-components"
-
+import { Link } from "gatsby";
+const slugify = require('@sindresorhus/slugify');
 
 const ArticlesCard = props => (
   <div className="CardContent">
@@ -14,10 +15,10 @@ const ArticlesCard = props => (
       TextColor={"#847E7E"}
     />
     <CardImg>
-      <div className="DarKCard" />
+      <Link to={slugify(props.title)} state={props.title}><div className="DarKCard" /></Link>
     </CardImg>
     <div className="SumGroup">
-      <h2>{props.title}</h2>
+      <Link to={slugify(props.title)} state={props.title}><h2>{props.title}</h2></Link>
       <div className="CardInfo">
         <p className="CardAuthor">
           By <strong>{props.author}</strong>

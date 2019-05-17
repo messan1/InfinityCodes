@@ -8,17 +8,17 @@ const Header = ({ siteTitle }) => (
     <h1>InfinityCodes</h1>
     <div className="headerGroupDetails">
       <ul className="box1">
-        <li>HOME</li>
-        <li>FORMATION</li>
-        <li>ARTICLES</li>
-        <li>EVENEMENTS</li>
-        <li>PROJETS</li>
-        <li>CONTACTS</li>
+        <li><Link to="/">HOME</Link></li>
+        <li><Link to="/">FORMATION</Link></li>
+        <li><Link to="/">ARTICLES</Link></li>
+        <li><Link to="/">EVENEMENTS</Link></li>
+        <li><Link to="/">PROJETS</Link></li>
+        <li><Link to="/">CONTACTS</Link></li>
       </ul>
       <ul className="box2">
-        <li>LOGIN</li>
-        <li>REGISTER</li>
-        <li>EN</li>
+      <li><Link to="/">LOGIN</Link></li>
+      <li><Link to="/">REGISTER</Link></li>
+      <li><Link to="/">EN</Link></li>
         
       </ul>
     </div>

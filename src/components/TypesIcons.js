@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import "./css/TypesIcons.css"
 
 const TypesIcons = props => {

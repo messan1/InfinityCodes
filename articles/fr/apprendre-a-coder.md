@@ -1,7 +1,7 @@
 ---
 path: "/pourquoi-apprendre-a-coder"
 date: "11 Avril 2019"
-title: "Pourquoi apprendre à coder ?"
+title: "Introduction"
 author: "Messan Christian"
 lang: 'fr'
 ---
