@@ -7,6 +7,7 @@ import "../components/css/Styles.css"
 import ArticlesCard from "../components/ArticlesCard"
 import NewsComp from "../components/NewsComp"
 
+
 const HandleTitle = data => {
   var value = ""
   var date = ""
