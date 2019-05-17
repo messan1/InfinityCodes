@@ -1,13 +1,14 @@
 import React from "react"
 import "./css/CardForArticlesDetails.css"
 import TypesIcons from "./TypesIcons"
+import styled from "styled-components"
 
 const CardForArticlesDetails = props => {
   return (
     <div className="CardContent1">
-      <div className="CardImg">
+      <CardImg>
         <div className="DarKCard1" />
-      </div>
+      </CardImg>
       
       <div className="SumGroup1">
       <TypesIcons
@@ -34,3 +35,14 @@ const CardForArticlesDetails = props => {
 }
 
 export default CardForArticlesDetails
+
+const CardImg = styled.div`
+background:gray;
+background-position: left;
+background-size: cover;
+width: 100%;
+height:192px;
+border-radius: 5px;
+position: sticky;
+
+`

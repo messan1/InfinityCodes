@@ -1,9 +1,10 @@
 import React from "react"
 import TypesIcons from "./TypesIcons"
 import "./css/Hero.css"
+import styled from 'styled-components'
 
 const Hero = () => (
-  <div className="Hero">
+  <HeroDiv>
     <div className="Dark">
       <TypesIcons
         heigth={55}
@@ -21,6 +22,16 @@ const Hero = () => (
         <div className="date">December 2019</div>
       </div>
     </div>
-  </div>
+  </HeroDiv>
 )
 export default Hero
+
+const HeroDiv = styled.div`
+    grid-column: 2/3;
+    width: 100%;
+    background: url("./images/ratl.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+`
