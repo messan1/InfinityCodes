@@ -11,7 +11,9 @@ const ArticlesCard = () => (
       color={"white"}
       TextColor={"#847E7E"}
     />
-    <div className="CardImg" />
+    <div className="CardImg">
+      <div className="DarKCard" />
+    </div>
     <div className="SumGroup">
       <h2>Sapien Lorem Libero Augue Tincidunt</h2>
       <div className="CardInfo">

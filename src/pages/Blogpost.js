@@ -4,9 +4,9 @@ import BlogPostHeaderImages from "../components/imagesFluid/BlogPostHeaderImages
 import NewsComp from "../components/NewsComp"
 import SocialShare from "../components/SocialShare"
 import { StaticQuery, graphql } from "gatsby"
-import Img from "../images/header.jpg"
 import { Helmet } from "react-helmet"
-import '../components/css/BlogPost.css'
+import "../components/css/BlogPost.css"
+import Hero from "../components/Hero"
 
 const DataStore = ({ data }) => (
   <StaticQuery
@@ -30,18 +30,12 @@ const DataStore = ({ data }) => (
         </Helmet>
         <SiteTitle>INFINITYCODES</SiteTitle>
         <Content>
+          <HeroContent>
+            <Hero/>
+          </HeroContent>
           <ArticleContent>
-            <Box>M</Box>
-            <ArticlesTitle>
-              {data.markdownRemark.frontmatter.title}
-            </ArticlesTitle>
-            <Author>
-              <By>by</By>
-              <Name>{data.markdownRemark.frontmatter.author}</Name>
-              <Dates>{data.markdownRemark.frontmatter.date}</Dates>
-            </Author>
-            <img src={Img} />
-            <div className="articleContent" 
+            <div
+              className="articleContent"
               dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
             />
             <SocialShare />
@@ -57,6 +51,10 @@ const DataStore = ({ data }) => (
 export default DataStore
 
 const Wrap = styled.div``
+const HeroContent = styled.div`
+  grid-column: 1/4;
+`
+
 const SiteTitle = styled.h1`
   display: flex;
   justify-content: center;
@@ -129,4 +127,3 @@ const Copyr = styled.div`
   margin-top: 80px;
   margin-bottom: 80px;
 `
-

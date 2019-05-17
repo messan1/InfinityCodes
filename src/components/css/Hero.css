@@ -1,39 +1,55 @@
+.Hero {
+  grid-column: 2/3;
+  width: 100%;
+  background: url("../../images/ratl.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  position: relative;
 
-.Hero{
-    grid-column: 2/3;
-    width: 100%;
-    background-color:#342F2F;
-    height: 500px; 
-    position: relative;
-    padding:30px 20px;
+ 
 }
-.IconCourse{
-    position: absolute;
-    color: white;
-    top: 0;
+.Dark {
+  position: absolute;
+  background-color: black;
+  opacity: 0.35;
+  z-index: 5448844;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  border-radius: 15px;
 }
-.IconCourse::after{
-    width: 50px;
-    height: 50px;
-    background-color: black;
+.IconCourse {
+  position: absolute;
+  color: white;
+  top: 0;
 }
-.CourseGroup{
-    position: absolute;
-    color: white;
-    bottom: 20%;
+.IconCourse::after {
+  width: 50px;
+  height: 50px;
+  background-color: black;
 }
-.CourseTitle{
-    font-size: 40px;
-    line-height: 1.1em;
-    margin-bottom:25px 
+.CourseGroup {
+  position: absolute;
+  color: white;
+  bottom: 10%;
 }
-.author{
-    display: inline;
-    color: #E1E1E1
+.CourseTitle {
+  font-size: 75px;
+  width: 100%;
+  line-height: 1.1em;
+  margin-bottom: 25px;
 }
-.date{
-    display: inline;
-    margin-left: 20px;
-    color: #E1E1E1
-
+.author {
+  display: inline;
+  color: #e1e1e1;
+}
+.date {
+  display: inline;
+  margin-left: 20px;
+  color: #e1e1e1;
 }
