@@ -22,7 +22,6 @@ const HandleTitle = data => {
   }
   return [value]
 }
-
 const IndexPage = ({ data }) => (
   <StaticQuery
     query={graphql`
