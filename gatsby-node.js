@@ -1,27 +1,36 @@
-  exports.createPages = async function({ actions, graphql }) {
-      const { data } = await graphql(`
-        query {
-            allMarkdownRemark{
-                edges{
-                  node{
-                    frontmatter{
-                      path
-                    }
-                  }
+
+import slugify from 'react-slugify'
+
+var hello = slugify("je suis slyg")
+console.log('object');
+
+
+exports.createPages = async function({ actions, graphql }) {
+    const { data } = await graphql(`
+      query {
+        allMarkdownRemark(filter: { frontmatter: { type: { eq: "TableOfContent" } } }) {
+            edges {
+              node {
+                headings {
+                  value
                 }
               }
-        }
-      `)
-      data.allMarkdownRemark.edges.forEach(edge => {
-            slug : edge.node.frontmatter.path
-              actions.createPage({
-                path: edge.node.frontmatter.path,
-                
-                component: require.resolve(`./src/pages/Blogpost.js`),
-                context: {
-                   slug:edge.node.frontmatter.path
-                  },
-              })
-  
-      })
-    }
+            }
+          }
+      }
+    `)
+    data.allMarkdownRemark.edges.forEach(edge => {
+        edge.node.headings.forEach(heading =>{
+          slug : heading.value
+            actions.createPage({
+              path: slugify(heading.value),
+              
+              component: require.resolve(`./src/pages/Blogpost.js`),
+              context: {
+                 slug: slugify(heading.value) 
+                },
+            })
+        })
+
+    })
+  }
