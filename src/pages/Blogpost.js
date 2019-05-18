@@ -9,7 +9,6 @@ import Header from "../components/Header"
 
 
 class MyCourse extends React.Component {
-
   render() {
     return (
       <Wrap>
