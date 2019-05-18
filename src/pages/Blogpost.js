@@ -2,36 +2,22 @@ import React from "react"
 import styled from "styled-components"
 import NewsComp from "../components/NewsComp"
 import SocialShare from "../components/SocialShare"
-import { StaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import "../components/css/BlogPost.css"
 import HeroArticles from "../components/HeroArticles"
-import Header from '../components/Header'
+import Header from "../components/Header"
 import CardForArticlesDetails from "../components/CardForArticlesDetails"
-import Paginate from "../components/Paginate";
+import Paginate from "../components/Paginate"
 
-const DataStore = ({ state }) => (
-  <StaticQuery
-
-    query={graphql`
-      query PostData {
-        markdownRemark(frontmatter:{title:{eq:"Introduction"}}){
-          frontmatter {
-            title
-            author
-            date
-          }
-          html
-        }
-      }
-    `}
-    render={data => (
+class MyCourse extends React.Component {
+  render() {
+    return (
       <Wrap>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Pourquoi apprendre à coder ?</title>
+          <title>{this.props.data.frontmatter.title}</title>
         </Helmet>
-        <Header/>
+        <Header />
         <Content>
           <HeroContent>
             <HeroArticles />
@@ -39,12 +25,12 @@ const DataStore = ({ state }) => (
           <ArticleContent>
             <div
               className="articleContent"
-              dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+              dangerouslySetInnerHTML={{ __html: this.props.data.html }}
             />
-            <Paginate/>
+            <Paginate />
             <SocialShare />
             <NewsComp />
-           
+
             <CardForArticlesDetails />
             <CardForArticlesDetails />
             <CardForArticlesDetails />
@@ -52,17 +38,36 @@ const DataStore = ({ state }) => (
           </ArticleContent>
         </Content>
       </Wrap>
-    )}
-  />
-)
+    )
+  }
+}
 
-export default DataStore
+const BlogPost = ({ data }) => {
+  return (
+      <MyCourse data={data.markdownRemark} />
+  )
+}
+
+export default BlogPost
+
+let title =""
+export const query = graphql`
+  query($title:String) {
+    markdownRemark(frontmatter: { title: { eq: $title }}) {
+      frontmatter {
+        title
+        author
+        date
+      }
+      html
+    }
+  }
+`
 
 const Wrap = styled.div``
 const HeroContent = styled.div`
   grid-column: 1/4;
 `
-
 
 const Content = styled.div`
   display: grid;
@@ -78,7 +83,6 @@ const Content = styled.div`
 const ArticleContent = styled.div`
   grid-column: 2/3;
 `
-
 
 const Copyr = styled.div`
   font-size: 25px;

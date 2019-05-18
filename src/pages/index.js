@@ -55,7 +55,8 @@ const IndexPage = ({ data }) => (
           />
           <article className="ArticleContent">
             {data.allMarkdownRemark.edges[0].node.headings.map(heading => (
-              <ArticlesCard 
+              <ArticlesCard
+              key={HandleTitle(heading.value)[0]} 
               title={HandleTitle(heading.value)[0]} 
               date={HandleTitle(heading.value)[1]} 
               author={data.allMarkdownRemark.edges[0].node.frontmatter.author} />

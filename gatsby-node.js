@@ -29,12 +29,12 @@ exports.createPages = async function({ actions, graphql }) {
     `)
     data.allMarkdownRemark.edges.forEach(edge => {
         edge.node.headings.forEach(heading =>{
-          slug : heading.value
+          title:  HandleTitle(heading.value)[0]
             actions.createPage({
               path: slugify(HandleTitle(heading.value)[0]),
               component: require.resolve(`./src/pages/Blogpost.js`),
               context: {
-                 slug:slugify(HandleTitle(heading.value)[0])
+                 title:  HandleTitle(heading.value)[0]
                 },
             })
         })
