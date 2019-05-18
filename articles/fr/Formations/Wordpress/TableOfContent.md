@@ -10,4 +10,4 @@ author : 'Messan Christian'
 
 #Je suis Prêt à Installer Wordpress-17 Mai 2019
 
-#Prendre connaissance de l'interface de Wordpress- 17 Mai 2019
+#Prendre connaissance de l'interface de Wordpress-17 Mai 2019
