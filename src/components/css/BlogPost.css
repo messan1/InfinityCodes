@@ -16,8 +16,10 @@ input::placeholder {
 }
 
 .articleContent {
-  margin-top: 25px;
-  text-align: justify;
+  margin:.5em 0 1.5em;
+  border-bottom:1px dotted;
+  padding-bottom:1.5em;
+  text-align:justify;
 
 }
 
@@ -39,6 +41,9 @@ input::placeholder {
   .articleContent img {
     width: 300px;
     height: 100px;
+  }
+  h1{
+    text-align: center
   }
 }
 a{

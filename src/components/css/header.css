@@ -40,8 +40,11 @@
 .headerGroupDetails a{
     color: gainsboro
 }
+a{
+    color: black;
+}
 @media(max-width:890px){
-    .HeaderGroup{
+    .headerGroupDetails{
         display: none;
     }
 }

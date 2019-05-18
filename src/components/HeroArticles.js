@@ -25,7 +25,7 @@ const Hero = props => (
         <div className="CourseTitle1">
           {props.title}
         </div>
-        <div className="author1">By {props.author}</div>
+        <div className="author1">Par {props.author}</div>
         <div className="date1">{props.date}</div>
       </div>
     </div>

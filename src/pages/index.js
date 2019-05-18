@@ -67,7 +67,7 @@ const IndexPage = ({ data }) => (
             ))}
           </article>
           <NewsComp />
-          <footer>INFINITYCODES</footer>
+          <footer>Infinitycodes</footer>
         </div>
       </Layout>
     )}

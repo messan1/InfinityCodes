@@ -33,10 +33,9 @@ class MyCourse extends React.Component {
               className="articleContent"
               dangerouslySetInnerHTML={{ __html: this.props.data.html }}
             />
-            <Paginate />
             <SocialShare />
             <NewsComp />
-            <Copyr>INFINITYCODES</Copyr>
+            <Copyr>Infinitycodes</Copyr>
           </ArticleContent>
         </Content>
       </Wrap>

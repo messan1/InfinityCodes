@@ -5,7 +5,7 @@ import './css/header.css'
 
 const Header = ({ siteTitle }) => (
   <header className="HeaderGroup">
-    <h1>InfinityCodes</h1>
+    <Link to='/'><h1>InfinityCodes</h1></Link>
     <div className="headerGroupDetails">
       <ul className="box1">
         <li><Link to="/" className='homeLink'>HOME</Link></li>

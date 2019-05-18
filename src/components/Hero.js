@@ -18,7 +18,7 @@ const Hero = props => (
         <div className="CourseTitle">
           {props.heroTitle}
         </div>
-        <div className="author">By {props.author}</div>
+        <div className="author">Par {props.author}</div>
         <div className="date">{props.date}</div>
       </div>
     </div>

@@ -28,7 +28,7 @@ const ArticlesCard = props => (
       </Link>
       <div className="CardInfo">
         <p className="CardAuthor">
-          By <strong>{props.author}</strong>
+          Par <strong>{props.author}</strong>
         </p>
         <p className="CardDate">{props.date}</p>
       </div>
