@@ -9,7 +9,9 @@ import Header from "../components/Header"
 import CardForArticlesDetails from "../components/CardForArticlesDetails"
 import Paginate from "../components/Paginate"
 
+
 class MyCourse extends React.Component {
+
   render() {
     return (
       <Wrap>
@@ -20,7 +22,11 @@ class MyCourse extends React.Component {
         <Header />
         <Content>
           <HeroContent>
-            <HeroArticles />
+            <HeroArticles
+              title = {this.props.data.frontmatter.title}
+              date ={this.props.data.frontmatter.date}
+              author ={this.props.data.frontmatter.author}
+            />
           </HeroContent>
           <ArticleContent>
             <div
@@ -30,10 +36,6 @@ class MyCourse extends React.Component {
             <Paginate />
             <SocialShare />
             <NewsComp />
-
-            <CardForArticlesDetails />
-            <CardForArticlesDetails />
-            <CardForArticlesDetails />
             <Copyr>INFINITYCODES</Copyr>
           </ArticleContent>
         </Content>
@@ -42,7 +44,7 @@ class MyCourse extends React.Component {
   }
 }
 
-const BlogPost = ({ data }) => {
+const BlogPost = ({ data}) => {
   return (
       <MyCourse data={data.markdownRemark} />
   )
