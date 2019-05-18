@@ -2,15 +2,14 @@ import React from "react"
 import TypesIcons from "./TypesIcons"
 import "./css/HeroArticles.css"
 import styled from "styled-components"
-
 const slugify = require("@sindresorhus/slugify")
-/*
-const HandleImage = Images => {
-  return require(`../images/wordpress/${Images}.jpg`)
+const HandleImage = name => {
+  return require(`../images/wordpress/${name}.jpg`)
 }
-*/
+
+
 const Hero = props => (
-  <HeroDiv>
+  <HeroDiv img={HandleImage(slugify(props.title))}>
     <div className="Dark1">
       <div className="IconsGroup1">
         <TypesIcons
@@ -36,7 +35,7 @@ export default Hero
 const HeroDiv = styled.div`
   grid-column: 2/3;
   width: 100%;
-  background-color:gray;
+  background: url(${props => props.img}) no-repeat;
   background-position: center;
   background-size: cover;
   height: 700px;

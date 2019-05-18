@@ -18,7 +18,7 @@ const ArticlesCard = props => (
       TextColor={"#847E7E"}
     />
     <CardImg img={HandleImage(slugify(props.title))}>
-      <Link to={props.link} state={{ title: props.title }}>
+      <Link to={props.link} state={{ title: props.title, images:HandleImage(slugify(props.title))}}>
         <div className="DarKCard" />
       </Link>
     </CardImg>
