@@ -16,7 +16,7 @@ class Hero extends Component {
     const HandleImage = name => {
       return require(`../images/wordpress/${name}.jpg`)
     }
-    
+    console.log(this.props);
     const HandlePath = location =>{
       var path ="";
       for (let i=1;i<location.length;i++){
@@ -27,7 +27,7 @@ class Hero extends Component {
     
     var myPath = window.location.pathname;
     return (
-      <HeroDiv img={HandleImage(slugify(HandlePath(this.state.location)))}>
+      <HeroDiv img={HandleImage(slugify(this.props.title))}>
       <div className="Dark1">
         <div className="IconsGroup1">
           <TypesIcons
