@@ -4,7 +4,6 @@ import "./css/HeroArticles.css"
 import styled from "styled-components"
 const slugify = require("@sindresorhus/slugify")
 
-
 class Hero extends Component {
   constructor(props) {
     super(props);
@@ -12,16 +11,24 @@ class Hero extends Component {
       
      };
   }
+
   render() {
+    const wn = window
+    console.log(wn.location.pathname);
     const HandleImage = name => {
       return require(`../images/wordpress/${name}.jpg`)
     }
 
 
-
-    
+    const HandlePath = location =>{
+      var path ="";
+      for (let i=1;i<location.length;i++){
+        path+=location[i];
+      }
+      return path
+    }
     return (
-      <HeroDiv img={HandleImage(slugify(this.props.title))}>
+      <HeroDiv img ={HandleImage(HandlePath(wn.location.pathname))} >
       <div className="Dark1">
         <div className="IconsGroup1">
           <TypesIcons
