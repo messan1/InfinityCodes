@@ -1,32 +1,11 @@
 ---
 path: "/pourquoi-apprendre-a-coder"
 date: "11 Avril 2019"
-title: "Introduction"
+title: "Apprendre à coder"
 author: "Messan Christian"
 lang: 'fr'
 ---
 
-#Decouvrir Pas à pas l'outils-17 Mai 2019
-
-#Les Apparences - 17 Mai 2019
-
-#Les plugins (Extensions)-17 Mai 2019
-
-#Les reglages-17 Mai 2019
-
-#Les utilisateurs-17 Mai 2019
-
-#les Mise à jour-17 Mai 2019
-
-#Les pages-17 Mai 2019
-
-#Les Articles-17 Mai 2019
-
-#Les Medias-17 Mai 2019
-
-#Les categories-17 Mai 2019
-
-#Le Tableau de Bord-17 Mai 2019
 
 
 ##1. Vous allez vous mettre au défi.

@@ -1,5 +1,5 @@
 ---
-date: "11 Avril 2019"
+date: "17 Avril 2019"
 title: "C'est quoi Wordpress? Pourquoi l'utiliser?"
 author: "Messan Christian"
 lang: 'fr'
@@ -13,15 +13,16 @@ Choisir une plate-forme parfaite pour créer un site Web ou un blog peut être f
 
 #Qu'est-ce que WordPress a à offrir?
 
-
 ###Liberté d'utiliser des thèmes personnalisés
 
 ![alt text](./img/themeWord.jpg "Installation de xampp")
+
 WordPress auto-hébergé permet au concepteur Web ou à tout utilisateur de choisir parmi autant de thèmes disponibles sur le Web - qu'ils soient gratuits, payants ou personnalisés! Aucun doute, il y a des thèmes gratuits disponibles. Cependant, ceux conçus à l'aide du logiciel de création de thèmes TemplateToaster dépassent les autres en raison de leurs performances élevées et de leur esthétique. L'option de flexibilité dans la conception vous donne le superpouvoir d'ajouter une touche personnelle à vos thèmes WordPress - Faites par vous, uniquement pour votre site web!
 
 ###Des extensions personnalisées sans fin
 
 ![alt text](./img/plugin.png "Installation de xampp")
+
 WordPress donne à l'utilisateur / concepteur la liberté de télécharger et de profiter de nombreux plugins (extensions) gratuits, payants et personnalisés disponibles. Les plugins sont minuscules mais ils font une énorme différence! Ils ajoutent les fonctionnalités souhaitées à votre site, peuvent rendre votre site plus optimisé et convivial. Cependant, avec autant de plugins disponibles par autant d'auteurs aujourd'hui, il faut des recherches pour trouver le meilleur pour votre site et ce qui fonctionne le mieux pour votre site Web auto-hébergé WordPress. ne vous en faite pas si vous ne comprenenez pas les notions commes plugins nous y reviendrons
 
 ###Nom de domaine personnalisé
@@ -38,11 +39,11 @@ La décision de monétiser votre blog / site Web est entièrement entre vos main
 
 ###SEO
 
-Avec votre propre site Web, vous avez toujours la possibilité d'installer des plugins personnalisés pour améliorer les performances et la portée de votre site Web. Le plugin Yoast SEO est l’un des plugins les plus téléchargés par les utilisateurs de WordPress. Il s’occupe de l’optimisation technique en aidant à choisir un mot clé cible, vous aidant ainsi à rédiger un meilleur contenu. Il comporte également des extensions telles que Yoast News SEO, Yoast Video SEO et Yoast Local SEO. Choisir un thème convivial pour votre site Web est essentiel pour tirer le meilleur parti du point de vue du référencement. "Si vous ne pouvez pas faire de grandes choses, faites de petites choses de manière géniale" Choisissez des stratégies de référencement actionnables et mettez-les en œuvre de manière judicieuse.
+Avec votre propre site Web, vous avez toujours la possibilité d'installer des plugins personnalisés pour améliorer les performances et la portée de votre site Web. Le plugin **Yoast SEO** est l’un des plugins les plus téléchargés par les utilisateurs de WordPress. Il s’occupe de l’optimisation technique en aidant à choisir un mot clé cible, vous aidant ainsi à rédiger un meilleur contenu. Il comporte également des extensions telles que Yoast News SEO, Yoast Video SEO et Yoast Local SEO. Choisir un thème convivial pour votre site Web est essentiel pour tirer le meilleur parti du point de vue du **référencement**. "Si vous ne pouvez pas faire de grandes choses, faites de petites choses de manière géniale" Choisissez des stratégies de référencement actionnables et mettez-les en œuvre de manière judicieuse. 
 
-#Quoi?
+#La question?
 
-Mais vous vous dites mais Christian Je suis déjà dévéloppeur et j'ai l'habitude d'ecrire de centaines de lignes de codes donc le code est terminé?
-EUH NON le code est belle est bien en plein essort.Même s'il existe Wordpress pour faire des sites plus rapidement vous aurez besoin parfois de faire certaines architechture de vous même car le faire avec wordpress vous prendra unpeu de temps pour afin de comprendre certains thèmes .De plus nous avons mentioné les plugins et le faite de faire de recherche pour trouver les meilleurs sans oublier que certains d'entre eux sont payant.
+Mais vous vous dites mais Christian Je suis déjà dévéloppeur et j'ai l'habitude d'ecrire de centaines de lignes de codes afin de lancer un site donc le code c'est terminé?
+EUH NON le code est belle est bien là et continu d'évoluer.Même s'il existe Wordpress pour faire des sites plus rapidement vous aurez besoin parfois de faire certaines architechture de vous même car le faire avec wordpress vous demandra unpeu plus de temps afin de comprendre certains thèmes. De plus nous avons mentioné les plugins et le faite de faire de recherche (pouvant prendre du temps et pour plusieurs plugins) pour trouver les meilleurs sans oublier que certains d'entre eux sont payant.
 
-Donc je vous donne rendez-vous dans le Chapitre 2 afin d'installer Wordpress
+Donc je vous donne rendez-vous dans le Chapitre 2 afin d'**installer Wordpress**
