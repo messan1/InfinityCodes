@@ -2,6 +2,7 @@ import React from "react"
 import TypesIcons from "./TypesIcons"
 import "./css/Hero.css"
 import styled from 'styled-components'
+import Myimage from '../images/wordpress.jpg'
 
 const Hero = props => (
   <HeroDiv>
@@ -28,7 +29,7 @@ export default Hero
 const HeroDiv = styled.div`
     grid-column: 2/3;
     width: 100%;
-    background: url("./images/ratl.jpg") no-repeat;
+    background: url(${Myimage}) no-repeat;
     background-position: center;
     background-size: cover;
     height: 700px;

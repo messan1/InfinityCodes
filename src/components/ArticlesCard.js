@@ -5,6 +5,11 @@ import styled from "styled-components"
 import { Link } from "gatsby";
 const slugify = require('@sindresorhus/slugify');
 
+const HandleImage = name =>{
+  return require(`../images/wordpress/${name}.jpg`)
+}
+
+console.log(slugify("C'est quoi Wordpress? Pourquoi l'utiliser?"));
 const ArticlesCard = props => (
   <div className="CardContent">
     <TypesIcons
@@ -14,21 +19,17 @@ const ArticlesCard = props => (
       color={"white"}
       TextColor={"#847E7E"}
     />
-    <CardImg>
-      <Link to={slugify(props.title)} state={props.title}><div className="DarKCard" /></Link>
+    <CardImg img ={HandleImage(slugify(props.title))} >
+      <Link to={props.link} state={props.title}><div className="DarKCard" /></Link>
     </CardImg>
     <div className="SumGroup">
-      <Link to={slugify(props.title)} state={props.title}><h2>{props.title}</h2></Link>
+      <Link to={props.link} state={props.title}><h2>{props.title}</h2></Link>
       <div className="CardInfo">
         <p className="CardAuthor">
           By <strong>{props.author}</strong>
         </p>
         <p className="CardDate">{props.date}</p>
       </div>
-      <p>
-        Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor
-        pretium donec dictum. Vici consequat justo enim.…
-      </p>
     </div>
   </div>
 )
@@ -37,7 +38,7 @@ export default ArticlesCard
 
 
 const CardImg = styled.div`
-background:gray;
+background: url(${props => props.img});;
 background-position: left;
 background-size: cover;
 width: 100%;

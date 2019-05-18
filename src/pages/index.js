@@ -6,6 +6,7 @@ import Hero from "../components/Hero"
 import "../components/css/Styles.css"
 import ArticlesCard from "../components/ArticlesCard"
 import NewsComp from "../components/NewsComp"
+const slugify = require('@sindresorhus/slugify');
 
 
 const HandleTitle = data => {
@@ -35,6 +36,7 @@ const IndexPage = ({ data }) => (
                 hero
                 date
                 author
+
               }
               headings {
                 value
@@ -52,13 +54,15 @@ const IndexPage = ({ data }) => (
             heroTitle={data.allMarkdownRemark.edges[0].node.frontmatter.hero}
             author={data.allMarkdownRemark.edges[0].node.frontmatter.author}
             date={data.allMarkdownRemark.edges[0].node.frontmatter.date}
+
           />
           <article className="ArticleContent">
             {data.allMarkdownRemark.edges[0].node.headings.map(heading => (
               <ArticlesCard
               key={HandleTitle(heading.value)[0]} 
               title={HandleTitle(heading.value)[0]} 
-              date={HandleTitle(heading.value)[1]} 
+              date={HandleTitle(heading.value)[1]}
+              link = {slugify(HandleTitle(heading.value)[0])}
               author={data.allMarkdownRemark.edges[0].node.frontmatter.author} />
             ))}
           </article>

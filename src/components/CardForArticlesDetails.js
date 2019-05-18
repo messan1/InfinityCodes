@@ -25,10 +25,6 @@ const CardForArticlesDetails = props => {
           </p>
           <p className="CardDate1">December 2019</p>
         </div>
-        <p>
-          Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor
-          pretium donec dictum. Vici consequat justo enim.…
-        </p>
       </div>
     </div>
   )
