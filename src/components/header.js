@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
     <h1>InfinityCodes</h1>
     <div className="headerGroupDetails">
       <ul className="box1">
-        <li><Link to="/">HOME</Link></li>
+        <li><Link to="/" className='homeLink'>HOME</Link></li>
         <li><Link to="/">FORMATION</Link></li>
         <li><Link to="/">ARTICLES</Link></li>
         <li><Link to="/">EVENEMENTS</Link></li>

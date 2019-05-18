@@ -82,7 +82,7 @@ class NewsComp extends Component {
                 if (result.result !== `success`) {
                     this.setState({
                         status: `error`,
-                        msg: result.msg,
+                        msg: "Entrez une adresse valide ou votre adresse existe déjà!",
                     })
                 } else {
                     // Email address succesfully subcribed to Mailchimp
@@ -96,7 +96,7 @@ class NewsComp extends Component {
                 // Network failures, timeouts, etc
                 this.setState({
                     status: `error`,
-                    msg: "Votre adresse existe déjà!",
+                    msg: "Oups!",
                 })
             })
     }

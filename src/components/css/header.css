@@ -34,9 +34,11 @@
     list-style: none;
     
 }
-
-.headerGroupDetails A{
+.box1 .homeLink {
     color: black
+}
+.headerGroupDetails a{
+    color: gainsboro
 }
 @media(max-width:890px){
     .HeaderGroup{
