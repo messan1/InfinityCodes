@@ -19,6 +19,9 @@
     font-size: 30px;
 }
 
+.SumGroup a {
+    color: black
+}
 
 .DarKCard{
     position: absolute;

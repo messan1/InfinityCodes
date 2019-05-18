@@ -35,6 +35,9 @@
     
 }
 
+.headerGroupDetails A{
+    color: black
+}
 @media(max-width:890px){
     .HeaderGroup{
         display: none;

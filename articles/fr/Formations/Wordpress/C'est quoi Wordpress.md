@@ -1,13 +1,13 @@
 ---
 path: "/pourquoi-apprendre-a-coder"
 date: "11 Avril 2019"
-title: "Introduction"
+title: "C'est quoi Wordpress? Pourquoi l'utiliser?"
 author: "Messan Christian"
 lang: 'fr'
 ---
 
 
-##1. Vous allez vous mettre au défi.
+##1. Vous allez vous 
 
 Être développeur  vous permet de vous mettre au défi quotidiennement. C’est un rôle qui vous oblige à faire preuve de créativité lorsque vous abordez un problème et vous met au défi de trouver une solution optimale à ce problème. Cette façon de travailler est idéale pour stimuler l'ambition et permet également de passer une journée au bureau ou chez soi sans jamais s'ennuyer.
 Vous pouvez travailler sur des projets incroyables et résoudre des problèmes.

@@ -1,10 +1,18 @@
-
-import slugify from 'react-slugify'
-
-var hello = slugify("je suis slyg")
-console.log('object');
-
-
+const slugify = require('@sindresorhus/slugify');
+const HandleTitle = data => {
+  var value = ""
+  var date = ""
+  for (let i = 0; i < data.length; i++) {
+    if (data[i] === "-") {
+      for (let j = i + 1; j < data.length; j++) {
+        date += data[j]
+      }
+      return [value,date]
+    }
+    value += data[i]
+  }
+  return [value]
+}
 exports.createPages = async function({ actions, graphql }) {
     const { data } = await graphql(`
       query {
@@ -21,13 +29,12 @@ exports.createPages = async function({ actions, graphql }) {
     `)
     data.allMarkdownRemark.edges.forEach(edge => {
         edge.node.headings.forEach(heading =>{
-          slug : heading.value
+          title:  HandleTitle(heading.value)[0]
             actions.createPage({
-              path: slugify(heading.value),
-              
+              path: slugify(HandleTitle(heading.value)[0]),
               component: require.resolve(`./src/pages/Blogpost.js`),
               context: {
-                 slug: slugify(heading.value) 
+                 title:  HandleTitle(heading.value)[0]
                 },
             })
         })
