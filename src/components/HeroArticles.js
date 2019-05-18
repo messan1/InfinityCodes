@@ -7,9 +7,18 @@ const HandleImage = name => {
   return require(`../images/wordpress/${name}.jpg`)
 }
 
+const HandlePath = location =>{
+  var path ="";
+  for (let i=1;i<location.length;i++){
+    path+=location[i];
+  }
+  return path
+}
+
+var myPath = window.location.pathname;
 
 const Hero = props => (
-  <HeroDiv img={HandleImage(slugify(props.title))}>
+  <HeroDiv img={HandleImage(slugify(HandlePath(myPath)))}>
     <div className="Dark1">
       <div className="IconsGroup1">
         <TypesIcons
