@@ -9,7 +9,7 @@ class Hero extends Component {
   constructor(props) {
     super(props);
     this.state = { 
-      location:window.location.pathname
+      
      };
   }
   render() {
