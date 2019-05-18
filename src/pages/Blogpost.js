@@ -6,8 +6,6 @@ import { Helmet } from "react-helmet"
 import "../components/css/BlogPost.css"
 import HeroArticles from "../components/HeroArticles"
 import Header from "../components/Header"
-import CardForArticlesDetails from "../components/CardForArticlesDetails"
-import Paginate from "../components/Paginate"
 
 
 class MyCourse extends React.Component {
