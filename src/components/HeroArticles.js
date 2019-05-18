@@ -8,10 +8,14 @@ class Hero extends Component {
   constructor(props) {
     super(props);
     this.state = { 
-      
+      mywindows:null
      };
   }
-
+componentDidMount(){
+  this.setState({
+    mywindows:window.location.pathname
+  })
+}
   render() {
     const wn = window
     console.log(wn.location.pathname);
@@ -28,7 +32,7 @@ class Hero extends Component {
       return path
     }
     return (
-      <HeroDiv img ={HandleImage(HandlePath(wn.location.pathname))} >
+      <HeroDiv img ={HandleImage(HandlePath(this.state.mywindows))} >
       <div className="Dark1">
         <div className="IconsGroup1">
           <TypesIcons
