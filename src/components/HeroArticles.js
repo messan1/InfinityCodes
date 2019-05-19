@@ -8,7 +8,6 @@ import img from '../images/wordpress/les-plugins-extensions.jpg'
 
 
 const Hero = props => {
-  console.log("onPreRouteUpdate");
   return (
     <HeroDiv img={img}>
       <div className="Dark1">
