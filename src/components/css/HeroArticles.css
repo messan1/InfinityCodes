@@ -68,3 +68,9 @@
   
     }
   }
+  
+@media(max-width:652px){
+  .CourseTitle1 {
+    font-size: 50px;
+  }
+}

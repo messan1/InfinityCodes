@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import TypesIcons from "./TypesIcons"
 import "./css/HeroArticles.css"
 import styled from "styled-components"
-import img from '../images/wordpress/les-plugins-extensions.jpg'
+import img from '../images/ratxl.jpg'
 
 
 
@@ -40,4 +40,7 @@ const HeroDiv = styled.div`
   background-size: cover;
   height: 700px;
   position: relative;
+  @media(max-width:652px){
+    height: 400px;
+  }
 `

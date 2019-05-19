@@ -34,4 +34,7 @@ const HeroDiv = styled.div`
     background-size: cover;
     height: 700px;
     position: relative;
+    @media(max-width:652px){
+      height: 400px;
+    }
 `

@@ -47,6 +47,9 @@ a .brand{
     .headerGroupDetails{
         display: none;
     }
+    a .brand{
+        font-size: 30px
+    }
 }
 .brand{
     color: black
