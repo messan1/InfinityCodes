@@ -1,38 +1,16 @@
-import React ,{Component} from "react"
+import React, { Component } from "react"
 import TypesIcons from "./TypesIcons"
 import "./css/HeroArticles.css"
 import styled from "styled-components"
-const slugify = require("@sindresorhus/slugify")
-
-class Hero extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { 
-      mywindows:null
-     };
-  }
-componentDidMount(){
-  this.setState({
-    mywindows:window.location.pathname
-  })
-}
-  render() {
-    const wn = window
-    console.log(wn.location.pathname);
-    const HandleImage = name => {
-      return require(`../images/wordpress/${name}.jpg`)
-    }
+import img from '../images/wordpress/les-plugins-extensions.jpg'
 
 
-    const HandlePath = location =>{
-      var path ="";
-      for (let i=1;i<location.length;i++){
-        path+=location[i];
-      }
-      return path
-    }
-    return (
-      <HeroDiv img ={HandleImage(HandlePath(this.state.mywindows))} >
+
+
+const Hero = props => {
+  console.log("onPreRouteUpdate");
+  return (
+    <HeroDiv img={img}>
       <div className="Dark1">
         <div className="IconsGroup1">
           <TypesIcons
@@ -44,21 +22,16 @@ componentDidMount(){
           />
         </div>
         <div className="CourseGroup1">
-          <div className="CourseTitle1">
-            {this.props.title}
-          </div>
-          <div className="author1">Par {this.props.author}</div>
-          <div className="date1">{this.props.date}</div>
+          <div className="CourseTitle1">{props.title}</div>
+          <div className="author1">Par {props.author}</div>
+          <div className="date1">{props.date}</div>
         </div>
       </div>
     </HeroDiv>
-    );
-  }
+  )
 }
 
-export default Hero;
-
-
+export default Hero
 
 const HeroDiv = styled.div`
   grid-column: 2/3;
