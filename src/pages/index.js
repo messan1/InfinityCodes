@@ -6,6 +6,7 @@ import Hero from "../components/Hero"
 import "../components/css/Styles.css"
 import ArticlesCard from "../components/ArticlesCard"
 import NewsComp from "../components/NewsComp"
+import { Helmet } from "react-helmet"
 const slugify = require('@sindresorhus/slugify');
 
 
@@ -48,6 +49,11 @@ const IndexPage = ({ data }) => (
     `}
     render={data => (
       <Layout>
+      <Helmet>
+      <meta charSet="utf-8" />
+      <title>InfinityCodes - Apprendre le Code</title>
+    </Helmet>
+    <Header />
         <div className="AllContent">
           <Header />
           <Hero
