@@ -53,7 +53,6 @@ const IndexPage = ({ data }) => (
       <meta charSet="utf-8" />
       <title>InfinityCodes - Apprendre le Code</title>
     </Helmet>
-    <Header />
         <div className="AllContent">
           <Header />
           <Hero
