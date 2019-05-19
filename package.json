@@ -26,7 +26,6 @@
     "gatsby-source-filesystem": "^2.0.29",
     "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-sharp": "^2.1.18",
-    "gh-pages": "^2.0.1",
     "net": "^1.0.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
@@ -46,14 +45,13 @@
     "gatsby"
   ],
   "license": "MIT",
-  "homepage": "https://infinitycodes.github.io",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "deploy":"gh-pages -d dist",
+    "now-build": "npm run build",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {
