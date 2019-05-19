@@ -1,13 +1,48 @@
 module.exports = {
   siteMetadata: {
     title: `InfinityCodes`,
-    description: `Apprenez à programmez en ligne`,
+    description: `Apprenez à programmez en ligne les technologies comme React, Nodejs, Js, Html & Css, Python, Flutter`,
     author: `Messan Christian`,
+    siteUrl: `https://infinitycodes.io`,
+    keywords: `['nodejs','php','python','javascript','react','html','css','flutter','apprendre à programmer','comment apprendre à programmer','comment apprendre à programmer gratuitement']`
   },
   plugins: [
+    'gatsby-plugin-robots-txt',
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: `https://infinitycodes.io`,
+        sitemap: 'https://infinity.io/infinity.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/infinity.xml`,
+        exclude: ["/category/*", `/path/to/page`],
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+  
+            allSitePage {
+              edges {
+                node {
+                  path
+                }
+              }
+            }
+        }`
+      }
+    },
     
     {
       resolve: `gatsby-source-filesystem`,

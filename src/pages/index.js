@@ -7,6 +7,7 @@ import "../components/css/Styles.css"
 import ArticlesCard from "../components/ArticlesCard"
 import NewsComp from "../components/NewsComp"
 import { Helmet } from "react-helmet"
+import SEO from './../components/seo';
 const slugify = require('@sindresorhus/slugify');
 
 
@@ -45,10 +46,23 @@ const IndexPage = ({ data }) => (
             }
           }
         }
+        site{
+    siteMetadata{
+      description
+      title
+      siteUrl
+      keywords
+    }
+  }
       }
     `}
     render={data => (
       <Layout>
+      <SEO
+        title={data.site.title}
+        description={data.site.description}
+        keywords={data.site.keywords}
+      />
       <Helmet>
       <meta charSet="utf-8" />
       <title>InfinityCodes - Apprendre le Code</title>
