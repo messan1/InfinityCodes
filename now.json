@@ -1,6 +1,7 @@
 {
     "version": 2,
     "name": "InfinityCodes",
+    "alias":"infinitycodes.io",
     "builds": [
       {
         "src": "package.json",
