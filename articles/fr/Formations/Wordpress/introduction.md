@@ -43,7 +43,7 @@ Avec votre propre site Web, vous avez toujours la possibilité d'installer des p
 
 #La question?
 
-Mais vous vous dites mais Christian Je suis déjà dévéloppeur et j'ai l'habitude d'ecrire de centaines de lignes de codes afin de lancer un site donc le code c'est terminé?
-EUH NON le code est belle est bien là et continu d'évoluer.Même s'il existe Wordpress pour faire des sites plus rapidement vous aurez besoin parfois de faire certaines architechture de vous même car le faire avec wordpress vous demandra unpeu plus de temps afin de comprendre certains thèmes. De plus nous avons mentioné les plugins et le faite de faire de recherche (pouvant prendre du temps et pour plusieurs plugins) pour trouver les meilleurs sans oublier que certains d'entre eux sont payant.
+Mais vous vous dites mais Christian Je suis déjà dévéloppeur et j'ai l'habitude d'ecrire des centaines de lignes de codes afin de lancer un site donc le code c'est terminé?
+EUH NON .Même s'il existe Wordpress pour faire des sites plus rapidement vous aurez besoin parfois de faire certaines architechtures de vous même car le faire avec wordpress vous demandra unpeu plus de temps afin de comprendre certains thèmes. De plus nous avons mentioné les plugins et le faite de faire des recherches (pouvant prendre du temps et cela pour tous les plugins) pour trouver les meilleurs sans oublier que certains d'entre eux sont payant.
 
 Donc je vous donne rendez-vous dans le Chapitre 2 afin d'**installer Wordpress**
