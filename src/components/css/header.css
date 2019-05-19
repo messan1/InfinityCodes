@@ -40,11 +40,14 @@
 .headerGroupDetails a{
     color: gainsboro
 }
-a{
+a .brand{
     color: black;
 }
 @media(max-width:890px){
     .headerGroupDetails{
         display: none;
     }
+}
+.brand{
+    color: black
 }
