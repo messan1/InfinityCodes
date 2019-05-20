@@ -3,6 +3,8 @@ date: "17 Avril 2019"
 title: "C'est quoi Wordpress? Pourquoi l'utiliser?"
 author: "Messan Christian"
 lang: 'fr'
+description : "Initiation à Wordpress ,Lancer vous aujourd'huit avec Wordpress"
+keywords : ["wordpress","infinitycodes","infinity codes","Apprendre à coder","Aprendre l'informatique gratuitement","lancer son site internet"]
 ---
 
 

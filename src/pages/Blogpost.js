@@ -6,12 +6,18 @@ import { Helmet } from "react-helmet"
 import "../components/css/BlogPost.css"
 import HeroArticles from "../components/HeroArticles"
 import Header from "../components/Header"
+import SEO from "../components/seo";
 
 
 class MyCourse extends React.Component {
   render() {
     return (
       <Wrap>
+      <SEO
+      title={this.props.data.frontmatter.title}
+      description={this.props.data.frontmatter.description}
+      keywords={this.props.data.frontmatter.keywords}
+      />
         <Helmet>
           <meta charSet="utf-8" />
           <title>{this.props.data.frontmatter.title}</title>
@@ -42,7 +48,7 @@ class MyCourse extends React.Component {
 
 const BlogPost = ({ data}) => {
   return (
-      <MyCourse data={data.markdownRemark} />
+      <MyCourse data={data.markdownRemark} seo = {data.site} />
   )
 }
 
@@ -56,6 +62,8 @@ export const query = graphql`
         title
         author
         date
+        description
+        keywords
       }
       html
     }

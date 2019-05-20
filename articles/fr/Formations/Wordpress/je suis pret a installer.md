@@ -3,6 +3,8 @@ date: "18 Avril 2019"
 title: "Je suis Prêt à Installer Wordpress"
 author: "Messan Christian"
 lang: 'fr'
+description : "Initiation à Wordpress ,Lancer vous aujourd'huit avec Wordpress"
+keywords : ["wordpress","infinitycodes","infinity codes","Apprendre à coder","Aprendre l'informatique gratuitement","lancer son site internet","installer wordpress","Xampp server"]
 ---
 
 
