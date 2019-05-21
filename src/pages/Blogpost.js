@@ -12,7 +12,7 @@ const slugify = require('@sindresorhus/slugify');
 const baseURL = "https://infinitycodes.io/"
 class MyCourse extends React.Component {
   render() {
-    const disqusShortname = 'infinity-12.disqus.com';
+    const disqusShortname = 'infinity-12';
     const disqusConfig = {
         url:baseURL+slugify(this.props.data.frontmatter.title),
         identifier: this.props.data.frontmatter.id,
