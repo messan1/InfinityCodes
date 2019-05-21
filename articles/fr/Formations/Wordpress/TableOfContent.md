@@ -4,6 +4,7 @@ formation: 'wordpress'
 hero : 'Initiation à Wordpress'
 date: '24 Avril 2019'
 author : 'Messan Christian'
+keywords: []
 ---
 
 #C'est quoi Wordpress? Pourquoi l'utiliser?-17 Mai 2019

@@ -7,7 +7,8 @@ import HeroArticles from "../components/HeroArticles"
 import Header from "../components/Header"
 import SEO from "../components/seo";
 import SocialShare from './../components/SocialShare';
-import { DiscussionEmbed, CommentCount } from 'disqus-react';
+import { DiscussionEmbed} from 'disqus-react';
+
 const slugify = require('@sindresorhus/slugify');
 
 const baseURL = "https://infinitycodes.io/"
@@ -44,9 +45,6 @@ class MyCourse extends React.Component {
               className="articleContent"
               dangerouslySetInnerHTML={{ __html: this.props.data.html }}
             />
-            <div className="shareSide">
-              share
-            </div>
             <SocialShare />
             <NewsComp />
             <DiscussionEmbed
