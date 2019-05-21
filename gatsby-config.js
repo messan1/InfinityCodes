@@ -13,6 +13,12 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
     {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `@disqus_yf1CYtH5eH`
+      }
+    },
+    {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: `https://infinitycodes.io`,

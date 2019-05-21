@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import {Icon} from 'react-icons-kit'
 import {facebookSquare} from 'react-icons-kit/fa/facebookSquare'
+import './css/ShareButton.css'
 
 const Wrap = styled.div`
     margin:100px auto;

@@ -1,4 +1,5 @@
 ---
+id: 2
 date: "18 Avril 2019"
 title: "Je suis Prêt à Installer Wordpress"
 author: "Messan Christian"

@@ -1,16 +1,23 @@
 import React from "react"
 import styled from "styled-components"
 import NewsComp from "../components/NewsComp"
-import SocialShare from "../components/SocialShare"
 import { Helmet } from "react-helmet"
 import "../components/css/BlogPost.css"
 import HeroArticles from "../components/HeroArticles"
 import Header from "../components/Header"
 import SEO from "../components/seo";
-
-
+import SocialShare from './../components/SocialShare';
+import { DiscussionEmbed, CommentCount } from 'disqus-react';
+const slugify = require('@sindresorhus/slugify');
+const baseURL = "infinitycodes.io"
 class MyCourse extends React.Component {
   render() {
+    const disqusShortname = 'infinity-12.disqus.com';
+    const disqusConfig = {
+        url:baseURL+slugify(this.props.data.frontmatter.title),
+        identifier: this.props.data.frontmatter.id,
+        title: this.props.data.frontmatter.title,
+    };
     return (
       <Wrap>
       <SEO
@@ -36,8 +43,15 @@ class MyCourse extends React.Component {
               className="articleContent"
               dangerouslySetInnerHTML={{ __html: this.props.data.html }}
             />
+            <div className="shareSide">
+              share
+            </div>
             <SocialShare />
             <NewsComp />
+            <DiscussionEmbed
+              shortname={disqusShortname}
+              config={disqusConfig}
+            />
             <Copyr>Infinitycodes</Copyr>
           </ArticleContent>
         </Content>
@@ -64,6 +78,7 @@ export const query = graphql`
         date
         description
         keywords
+        id
       }
       html
     }
