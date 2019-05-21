@@ -16,7 +16,7 @@ class MyCourse extends React.Component {
     const disqusShortname = 'infinity-12';
     const disqusConfig = {
         url:baseURL+slugify(this.props.data.frontmatter.title),
-        identifier: this.props.data.frontmatter.id,
+        identifier: this.props.data.frontmatter.title,
         title: this.props.data.frontmatter.title,
     };
     return (

@@ -1,5 +1,4 @@
 ---
-id: 3
 date: "18 Avril 2019"
 title: "Prendre connaissance de l'interface de Wordpress"
 author: "Messan Christian"

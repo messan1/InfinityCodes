@@ -1,5 +1,4 @@
 ---
-id: 1
 date: "17 Avril 2019"
 title: "C'est quoi Wordpress? Pourquoi l'utiliser?"
 author: "Messan Christian"
