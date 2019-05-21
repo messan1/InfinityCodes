@@ -79,7 +79,6 @@ export const query = graphql`
         date
         description
         keywords
-        id
       }
       html
     }
