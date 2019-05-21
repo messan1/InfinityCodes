@@ -9,6 +9,7 @@ import SEO from "../components/seo";
 import SocialShare from './../components/SocialShare';
 import { DiscussionEmbed, CommentCount } from 'disqus-react';
 const slugify = require('@sindresorhus/slugify');
+
 const baseURL = "https://infinitycodes.io/"
 class MyCourse extends React.Component {
   render() {
